@@ -39,3 +39,22 @@ module ResistorColorDuo
     "#{colors[arr[0].to_sym]}#{colors[arr[1].to_sym]}".to_i
   end
 end
+
+
+=begin
+Write your code for the 'Acronym' exercise in this file. Make the tests in
+`acronym_test.rb` pass.
+
+To get started with TDD, see the `README.md` file in your
+`ruby/acronym` directory.
+=end
+
+module Acronym
+  def self.abbreviate(str)
+    abr = ''
+    str.upcase.split.each do |el|
+      abr += el[0]
+    end
+    abr
+  end
+end
